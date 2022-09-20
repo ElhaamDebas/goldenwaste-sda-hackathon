@@ -76,7 +76,14 @@
             <version>3.6.0</version>
         </dependency>
 	</dependencies>
-
+	
+<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>3d856041fab5-snapshots</name>
+        <url>http://ec2-44-204-61-58.compute-1.amazonaws.com:8081/artifactory/mvnrepo-libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
