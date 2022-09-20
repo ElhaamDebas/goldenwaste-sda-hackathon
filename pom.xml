@@ -78,12 +78,18 @@
 	</dependencies>
 	
 <distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>Releases</name>
+      <url>http://ec2-3-129-14-144.us-east-2.compute.amazonaws.com:8081/repository/maven-releases</url>
+    </repository>
     <snapshotRepository>
-        <id>snapshots</id>
-        <name>3d856041fab5-snapshots</name>
-        <url>http://ec2-44-204-61-58.compute-1.amazonaws.com:8081/artifactory/mvnrepo-libs-snapshot-local</url>
+      <id>nexus</id>
+      <name>Snapshot</name>
+      <url>http://ec2-3-129-14-144.us-east-2.compute.amazonaws.com:8081/repository/maven-snapshots</url>
     </snapshotRepository>
-</distributionManagement>
+  </distributionManagement>
+	
 	<build>
 		<plugins>
 			<plugin>
